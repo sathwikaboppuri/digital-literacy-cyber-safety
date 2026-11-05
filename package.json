@@ -1,0 +1,13 @@
+{
+  "name": "digital-literacy-and-cyber-safety-rural-csp",
+  "version": "1.0.0",
+  "description": "Full-Stack Web Platform for Digital Literacy & Cyber Safety Awareness in Rural Communities (Community Service Project)",
+  "scripts": {
+    "server": "cd server && node server.js",
+    "client": "cd client && npm.cmd run dev",
+    "seed": "cd server && node seed/seedData.js",
+    "build": "cd client && npm.cmd run build"
+  },
+  "author": "Community Service Project Team",
+  "license": "ISC"
+}
