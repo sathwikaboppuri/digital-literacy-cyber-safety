@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = 'https://digital-literacy-cyber-safety-2.onrender.com/api';
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('token');
