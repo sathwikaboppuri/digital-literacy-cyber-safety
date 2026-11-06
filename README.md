@@ -59,23 +59,14 @@ Frequently Asked Questions
 🛠️ Technology Stack
 
 Frontend
-
 React.js (Vite)
-
 React Router DOM
-
 Lucide React Icons
-
 CSS3
-
 Backend
-
 Node.js
-
 Express.js
-
 JWT Authentication
-
 Bcrypt.js
 CORS
 Database
@@ -87,10 +78,10 @@ Automatic Local JSON Storage Fallback
 
 📂 Project Structure
 digital-literacy-cyber-safety/
-├── client/
-├── server/
-├── package.json
-└── README.md
+                   ├── client/
+                          ├── server/
+                              ├── package.json
+                                   └── README.md
 
 🚀 Getting Started
 
@@ -173,16 +164,16 @@ Encourage safe online financial practices
 Increase adoption of trusted government digital services
 Support community-based digital empowerment initiatives
 
-📸 Screenshots
-Add screenshots here:
 
 Home Page
+
 Digital Literacy Module
 Cyber Safety Module
 Community Survey
 Admin Dashboard
 
 👨‍💻 Developer
+
 Sathwika Boppuri
 
 Community Service Project (CSP)
