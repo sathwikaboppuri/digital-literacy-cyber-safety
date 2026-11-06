@@ -1,199 +1,151 @@
-# Digital Literacy & Cyber Safety Awareness in Rural Communities
-**Community Service Project (CSP) — Industry-Grade Full-Stack Web Application**
+🌐 GramSuraksha
+Digital Literacy & Cyber Safety Awareness in Rural Communities
+Community Service Project (CSP)
 
----
+GramSuraksha is a full-stack web application designed to improve digital literacy and cyber safety awareness in rural communities. The platform educates users on smartphone usage, secure digital payments, government online services, cyber fraud prevention, and digital empowerment through interactive learning modules and community engagement tools.
 
-## 🌟 Project Overview
-GramSuraksha is a dedicated, full-stack digital empowerment platform built for rural communities. With smartphone adoption rapidly rising across rural villages, citizens are often targeted by cyber criminals through fake loan apps, lottery frauds, OTP scams, and electricity disconnection threats.
+🔗 Live Demo: https://digital-literacy-cyber-safety.vercel.app/
 
-This platform bridges the rural digital divide by providing:
-1. **Smartphone Literacy & App Permission Essentials**
-2. **Secure Digital Payments & UPI Simulation (The Golden Rule: Never enter PIN to receive money)**
-3. **Official Online Government Services Access (DigiLocker, PM-Kisan, UMANG)**
-4. **Cyber Safety Education, Scam Defense & Interactive Quiz**
-5. **Real-Time Grassroots Survey Collection & Awareness Rating**
-6. **Community Helpdesk & National Cyber Crime Helpline (1930) Integration**
-7. **Secure Administrator Control Panel with Real MongoDB Analytics**
+🌟 Key Features
+📱 Digital Literacy Education
+Smartphone essentials and safe usage practices
+Understanding app permissions and privacy settings
+Accessing digital government services
+💳 Secure Digital Payments
+Interactive UPI payment simulator
+Awareness about common payment scams
+Important safety rule:
+Never enter your UPI PIN to receive money
 
----
+🛡️ Cyber Safety Awareness
+OTP scam prevention
+Fake loan app awareness
+Lottery and prize fraud detection
+Electricity disconnection scam alerts
+SIM swap fraud education
+📚 Awareness Resources
+Searchable educational articles
+Category-based resource filtering
+Printable awareness materials
+📊 Community Survey System
+Digital literacy assessment
+Awareness score calculation
+Community needs analysis
+👨‍💼 Admin Dashboard
+Secure administrator login
+Survey analytics and reporting
+Article management
+Contact inquiry management
+☎️ Community Support
+National Cyber Crime Helpline (1930)
+Community helpdesk support
+Frequently Asked Questions
+🛠️ Technology Stack
+Frontend
+React.js (Vite)
+React Router DOM
+Lucide React Icons
+CSS3
+Backend
+Node.js
+Express.js
+JWT Authentication
+Bcrypt.js
+CORS
+Database
+MongoDB
+Mongoose ODM
+Data Resilience
+MongoDB Integration
+Automatic Local JSON Storage Fallback
 
-## 🛠️ Technology Stack
-
-### **Frontend**
-- **React.js (Vite)** — Fast, component-driven reactive UI
-- **React Router (v6)** — Single Page Application navigation
-- **Lucide Icons** — Modern, accessible SVG icon library
-- **Custom CSS3 Design System**:
-  - Theme: Navy Blue (`#0B192C`), Royal Blue (`#1e40af`), Pure White (`#ffffff`), Cyan Glow (`#00f2fe`)
-  - Glassmorphism (`backdrop-filter: blur(14px)`, translucent frosted glass borders)
-  - 3D hover elevations, smooth keyframe animations, responsive drawer navigation
-  - Professional typography (Outfit & Plus Jakarta Sans)
-
-### **Backend**
-- **Node.js & Express.js** — Modular RESTful API server
-- **JSON Web Tokens (JWT)** — Stateless secure authentication
-- **Bcrypt.js** — Industry-standard salted password hashing
-- **CORS** — Cross-Origin Resource Sharing enabled
-
-### **Database & Data Resilience**
-- **MongoDB & Mongoose ODM** — Schemas with strict validation for `Users`, `Surveys`, `Contacts`, and `Articles`
-- **Dual-Mode Data Resilience Engine**:
-  - Automatically connects to live MongoDB (local or Atlas via `MONGODB_URI`).
-  - If MongoDB is not yet running, seamlessly falls back to a persistent JSON store (`server/data/local_db.json`) without any crashes or downtime, allowing instant plug-and-play testing!
-
----
-
-## 📂 Project Architecture
-
-```
+📂 Project Structure
 digital-literacy-cyber-safety/
 ├── client/
-│   ├── index.html
-│   ├── vite.config.js
-│   ├── package.json
-│   └── src/
-│       ├── main.jsx
-│       ├── App.jsx
-│       ├── index.css
-│       ├── context/
-│       │   └── AuthContext.jsx
-│       ├── services/
-│       │   └── api.js
-│       ├── components/
-│       │   ├── Navbar.jsx
-│       │   ├── Footer.jsx
-│       │   ├── AuthModal.jsx
-│       │   └── ProtectedRoute.jsx
-│       └── pages/
-│           ├── Home.jsx
-│           ├── About.jsx
-│           ├── DigitalLiteracy.jsx
-│           ├── CyberSafety.jsx
-│           ├── AwarenessResources.jsx
-│           ├── CommunitySurvey.jsx
-│           ├── ContactUs.jsx
-│           └── AdminDashboard.jsx
 ├── server/
-│   ├── server.js
-│   ├── package.json
-│   ├── .env
-│   ├── .env.example
-│   ├── config/
-│   │   └── db.js
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Survey.js
-│   │   ├── Contact.js
-│   │   └── Article.js
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── surveyController.js
-│   │   ├── contactController.js
-│   │   ├── articleController.js
-│   │   └── dashboardController.js
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── surveyRoutes.js
-│   │   ├── contactRoutes.js
-│   │   ├── articleRoutes.js
-│   │   └── dashboardRoutes.js
-│   ├── middleware/
-│   │   ├── authMiddleware.js
-│   │   └── errorMiddleware.js
-│   └── seed/
-│       └── seedData.js
 ├── package.json
 └── README.md
-```
-
----
-
-## 🚀 Step-by-Step Setup & Run Instructions
-
-### 1. Prerequisites
-- **Node.js** (v18 or higher recommended)
-- **npm** (included with Node.js)
-- **MongoDB** (Optional: local MongoDB community server or MongoDB Atlas cloud URI. If not installed, the app automatically runs on persistent local storage).
-
----
-
-### 2. Running the Backend Server
-
-Open your first terminal window and navigate to the `server` folder:
-
-```bash
-cd C:\Users\sathw\.gemini\antigravity\scratch\digital-literacy-cyber-safety\server
+🚀 Getting Started
+Prerequisites
+Node.js (v18+)
+npm
+MongoDB (Optional)
+Clone Repository
+git clone https://github.com/YOUR_USERNAME/digital-literacy-cyber-safety.git
+cd digital-literacy-cyber-safety
+Start Backend Server
+cd server
+npm install
 node server.js
-```
+Backend URL:
 
-You will see:
-```text
-======================================================
-  DIGITAL LITERACY & CYBER SAFETY AWARENESS PLATFORM  
-  Community Service Project (CSP) - Backend Server   
-======================================================
- Server active on port: 5000
- API Health Check: http://localhost:5000/api/health
- Default Admin: admin@community.org | Pass: admin123
-======================================================
-```
+http://localhost:5000
+API Health Check:
 
----
+http://localhost:5000/api/health
+Start Frontend
+cd client
+npm install
+npm run dev
+Frontend URL:
 
-### 3. Running the React Frontend
+http://localhost:3000
+🔑 Demo Administrator Credentials
+Email:
 
-Open a second terminal window and navigate to the `client` folder:
+admin@community.org
+Password:
 
-```bash
-cd C:\Users\sathw\.gemini\antigravity\scratch\digital-literacy-cyber-safety\client
-npm.cmd run dev
-```
+admin123
+🧪 Application Modules
+🏠 Home
+Platform overview
+Scam detection scenarios
+Emergency helpline access
+📱 Digital Literacy
+Smartphone Essentials
+UPI & Digital Payments
+Government Service Portals
+🛡️ Cyber Safety
+Cyber threat awareness
+Interactive cyber safety quiz
+📚 Resources
+Educational articles
+Search and category filters
+📊 Community Survey
+Awareness assessment
+Digital literacy score generation
+📩 Contact Us
+Workshop requests
+User inquiries
+Community support
+👨‍💼 Admin Dashboard
+Survey analytics
+Article management
+Inquiry tracking
+Community insights
 
-Open your browser at:
-👉 **`http://localhost:3000`**
+🎯 Project Objectives
+Promote digital literacy in rural communities
+Improve awareness of cyber threats and scams
+Encourage safe online financial practices
+Increase adoption of trusted government digital services
+Support community-based digital empowerment initiatives
 
----
+📸 Screenshots
+Add screenshots here:
 
-## 🔑 Default Administrator Credentials
-The database is auto-seeded with default admin credentials so you can log in right away:
+Home Page
+Digital Literacy Module
+Cyber Safety Module
+Community Survey
+Admin Dashboard
 
-- **Email:** `admin@community.org`
-- **Password:** `admin123`
-- *(Tip: In the Sign-In modal, there is also a 1-click button **"Fill Admin Demo Credentials"** for instant testing!)*
+👨‍💻 Developer
+Sathwika Boppuri
 
----
+Community Service Project (CSP)
 
-## 🧪 Testing All Application Modules
+📄 License
+This project is developed for educational and community awareness purposes.
 
-1. **Home Page (`/`)**:
-   - Check real-time field stats aggregated from the database.
-   - Test the interactive **"Is It A Scam?"** scenario checker.
-   - Click the emergency 1930 helpline badges.
-
-2. **Digital Literacy (`/digital-literacy`)**:
-   - Switch between **Smartphone Essentials**, **UPI & Digital Payments**, and **Government Portals**.
-   - Test the **Interactive UPI Simulator**: Choose *Pay* (requires PIN) vs *Receive* (NO PIN EVER!).
-
-3. **Cyber Safety (`/cyber-safety`)**:
-   - Review the breakdown of rural cyber threats (loan apps, disconnection scams, SIM swap).
-   - Take the **Interactive Cyber Awareness Quiz** (5 questions) with instant scoring and explanation.
-
-4. **Awareness Resources (`/resources`)**:
-   - Search articles by keyword (e.g. "UPI", "loan", "DigiLocker").
-   - Filter by categories using pill buttons.
-   - Click any card to open the **Full Article Modal** with key takeaways and print option.
-
-5. **Community Survey (`/survey`)**:
-   - Fill out the realistic survey form (demographics, smartphone usage, fraud experience).
-   - Submit to calculate your dynamic **Digital Awareness Score (0-100)** saved directly to MongoDB.
-
-6. **Contact Us (`/contact`)**:
-   - Submit an inquiry or workshop request.
-   - View emergency numbers and expandable community FAQs.
-
-7. **Admin Dashboard (`/admin`)**:
-   - Sign in with `admin@community.org` / `admin123`.
-   - **Overview Tab:** View database stats, demographic distribution bars, and barrier charts.
-   - **Surveys Tab:** Search and view detailed survey submissions.
-   - **Articles Tab:** Publish, edit, and delete educational articles.
-   - **Inquiries Tab:** Update inquiry statuses (`New` → `In Review` → `Resolved`) or delete messages.
