@@ -9,12 +9,11 @@ GramSuraksha is a full-stack web application designed to improve digital literac
 🔗 Live Demo: https://digital-literacy-cyber-safety.vercel.app/
 
 🌟 Key Features
+
 📱 Digital Literacy Education
 
 Smartphone essentials and safe usage practices
-
 Understanding app permissions and privacy settings
-
 Accessing digital government services
 
 💳 Secure Digital Payments
@@ -60,14 +59,23 @@ Frequently Asked Questions
 🛠️ Technology Stack
 
 Frontend
+
 React.js (Vite)
+
 React Router DOM
+
 Lucide React Icons
+
 CSS3
+
 Backend
+
 Node.js
+
 Express.js
+
 JWT Authentication
+
 Bcrypt.js
 CORS
 Database
